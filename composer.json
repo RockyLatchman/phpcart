@@ -1,0 +1,9 @@
+{
+  "name": "rockylatchman/phpcart",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
