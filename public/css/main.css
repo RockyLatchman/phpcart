@@ -1,0 +1,92 @@
+
+* {
+ padding: 0;
+ margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #cc4c4c;
+}
+
+header {
+  width: 100%;
+}
+
+#cart-item {
+  font: 700 1em "Sofia Sans Condensed", sans-serif;
+  color: #fafafa;
+  text-align: right;
+  margin: 15px 50px 0 0;
+  cursor: pointer;
+}
+
+h1 {
+ font: 900 13em "Sofia Sans Condensed", sans-serif;
+ color: #78e6f2;
+ text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50px;
+}
+
+.container #cover-image {
+  object-fit: cover;
+  clip-path: inset(35% 0 0 0);
+  width: 100%;
+  height: 700px;
+}
+
+#shop-gallery {
+   width: 100%;
+   height: 100vh;
+   margin: 25px 0 85px 0;
+}
+
+#shop-gallery h2 {
+   text-align: center;
+   font: 900 2.5em "Sofia Sans Condensed", sans-serif;
+   color: #fafafa;
+}
+
+.shop-gallery-row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 35px 5px;
+   width: 90%;
+   margin: 35px auto 0 auto;
+}
+
+.shop-gallery-row .column {
+  flex: 25%;
+  max-width: 24%;
+}
+
+.shop-gallery-row ul li {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.shop-gallery-row ul li a {
+  color: #fafafa;
+  font: 200 0.8em "Allerta", sans-serif;
+  text-decoration: none;
+}
+
+.column ul li img {
+   width: 285px;
+   height: 285px;
+   border-radius: 25px;
+}
+
+.column ul li span {
+  margin-left: 25px;
+}
