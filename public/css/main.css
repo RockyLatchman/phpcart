@@ -105,39 +105,54 @@ h1 {
    height: 100vh;
 }
 
-.product-container div {
+.product div {
    width: 100%;
 }
 
-.product-container div:last-of-type {
+.product div:last-of-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: -120px 0 0 0;
 }
 
-.product-container div a {
+.product div a {
   color: #fafafa;
   font: 200 0.8em "Allerta", sans-serif;
 }
 
-.product-container div img {
+.product div img {
   border-radius: 15px;
   margin-top: 15px;
 }
 
-.product-container div h3 {
+.product div h3 {
   color: #fafafa;
   font: 900 2em "Sofia Sans Condensed", sans-serif;
 }
 
-.product-container div p:first-of-type {
+.product div p:first-of-type {
   font-weight: 800;
   font: 300 2.5em "Sofia Sans Condensed", sans-serif;
   margin: 5px 0 15px 0;
 }
 
-.product-container div p,
+.product select {
+  width: 150px;
+  margin: 15px 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  color: #fafafa;
+  font: 100 1em "Allerta", sans-serif
+}
+
+.product select option {
+  background:#fff;
+  color:#cc4c4c;
+}
+
+.product div p,
 #quantity {
   width: 100%;
   color: #fafafa;
@@ -145,10 +160,10 @@ h1 {
   line-height: 2em;
 }
 
-#producty-description {
+#product-description {
   color: #fafafa;
   font: 900 1em "Allerta", sans-serif;
-  margin: 15px 0;
+  margin: 45px 0 15px 0;
 }
 
 .product div ul li {
@@ -156,24 +171,29 @@ h1 {
   list-style-type: none;
 }
 
-.product div ul:nth-child(odd) {
-  margin: 15px 0;
-  width: 27%;
-  border-radius: 8px;
+.product div ul:nth-child(even) {
+  width: 135px;
+  margin-top: 10px;
+  padding-left: 10px;
   border: 1px solid #fff;
+  border-radius: 5px;
 }
 
-.product div ul:nth-child(odd) button {
+.product div ul:nth-child(even) button {
   background: none;
   border: none;
   color: #fafafa;
-  font: 200 0.9em "Allerta", sans-serif;
-  margin: 0 25px;
+  font: 700 0.9em "Allerta", sans-serif;
+  margin: 0 20px 0 3px;
+}
+
+.product div ul:nth-child(even) button:last-child {
+  margin-left: 25px !important;
   cursor: pointer;
 }
 
-.product-container div ul:nth-child(even){
-  margin-top: 25px;
+.product div ul:nth-child(odd) button {
+  margin-left: 0 !important;
 }
 
 .product-container div ul:nth-child(odd) {
@@ -181,24 +201,24 @@ h1 {
 }
 
 .product div ul #add {
-    border: 1px solid #fafafa;
-    border-radius: 8px;
-    background: none;
-    margin-right: 15px;
-    width: 135px;
-    height: 40px;
-    color: #fafafa;
-    font: 700 0.9em "Allerta", sans-serif;
-    cursor: pointer;
+  border: 1px solid #fafafa;
+  border-radius: 8px;
+  background: none;
+  width: 135px;
+  height: 40px;
+  color: #fafafa;
+  font: 700 0.9em "Allerta", sans-serif;
+  cursor: pointer;
 }
 
 .product div ul #buy {
-    border: none;
-    border-radius: 8px;
-    background: #fafafa;
-    width: 135px;
-    height: 40px;
-    color:#cc4c4c;
-    font: 700 0.9em "Allerta", sans-serif;
-    cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #fafafa;
+  width: 135px;
+  height: 40px;
+  color:#cc4c4c;
+  font: 700 0.9em "Allerta", sans-serif;
+  cursor: pointer;
+  margin-left: 15px !important;
 }
