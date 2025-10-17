@@ -90,3 +90,115 @@ h1 {
 .column ul li span {
   margin-left: 25px;
 }
+
+/* Product */
+
+.product-container {
+   width: 65%;
+   margin: 18% auto 0 auto;
+}
+
+.product {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   height: 100vh;
+}
+
+.product-container div {
+   width: 100%;
+}
+
+.product-container div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -120px 0 0 0;
+}
+
+.product-container div a {
+  color: #fafafa;
+  font: 200 0.8em "Allerta", sans-serif;
+}
+
+.product-container div img {
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.product-container div h3 {
+  color: #fafafa;
+  font: 900 2em "Sofia Sans Condensed", sans-serif;
+}
+
+.product-container div p:first-of-type {
+  font-weight: 800;
+  font: 300 2.5em "Sofia Sans Condensed", sans-serif;
+  margin: 5px 0 15px 0;
+}
+
+.product-container div p,
+#quantity {
+  width: 100%;
+  color: #fafafa;
+  font: 200 0.8em "Allerta", sans-serif;
+  line-height: 2em;
+}
+
+#producty-description {
+  color: #fafafa;
+  font: 900 1em "Allerta", sans-serif;
+  margin: 15px 0;
+}
+
+.product div ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+.product div ul:nth-child(odd) {
+  margin: 15px 0;
+  width: 27%;
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+
+.product div ul:nth-child(odd) button {
+  background: none;
+  border: none;
+  color: #fafafa;
+  font: 200 0.9em "Allerta", sans-serif;
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.product-container div ul:nth-child(even){
+  margin-top: 25px;
+}
+
+.product-container div ul:nth-child(odd) {
+  margin: 15px 0;
+}
+
+.product div ul #add {
+    border: 1px solid #fafafa;
+    border-radius: 8px;
+    background: none;
+    margin-right: 15px;
+    width: 135px;
+    height: 40px;
+    color: #fafafa;
+    font: 700 0.9em "Allerta", sans-serif;
+    cursor: pointer;
+}
+
+.product div ul #buy {
+    border: none;
+    border-radius: 8px;
+    background: #fafafa;
+    width: 135px;
+    height: 40px;
+    color:#cc4c4c;
+    font: 700 0.9em "Allerta", sans-serif;
+    cursor: pointer;
+}

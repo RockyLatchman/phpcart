@@ -28,8 +28,13 @@ class Product {
                 $price = $this->price_converter(intval($row['price']));
                 echo '<div class="product-container">';
                 echo '<div class="product">';
+                echo '<div>';
                 echo '<a href="/shoemart/">Back to products</a>';
+                echo '<br>';
                 echo "<img src='./public/images/{$row['image']}' alt='image of {$row['name']}'>";
+                echo '</div>';
+
+                echo '<div>';
                 echo "<h3>{$row['name']}</h3>";
                 echo "<p>&dollar;{$price}</p>";
                 echo '<p>Size</p>';
@@ -39,20 +44,23 @@ class Product {
                 echo '<li id="quantity">1</li>';
                 echo '<li><button>&plus;</button></li>';
                 echo '</ul>';
-                echo '<p>Product Description</p>';
+                echo '<p id="producty-description">Product Description</p>';
                 echo "<p>{$row['description']}</p>";
                 echo '<ul>';
-                echo '<li><button>Add to Cart</button></li>';
-                echo '<li><button>Buy Now</button></li>';
+                echo '<li><button id="add">Add to Cart</button></li>';
+                echo '<li><button id="buy">Buy Now</button></li>';
                 echo '</ul>';
                 echo '</div>';
+
                 echo '</div>';
+                echo '<div>';
            endwhile;
         endif;
     }
 
     private function get_product_size($product_id){
         //Takes the product_id and returns all the available sizes
+
     }
 
     private function price_converter(int $product_price): int {
